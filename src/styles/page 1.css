@@ -1,0 +1,94 @@
+.page1 .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, hsl(212, 72%, 59%, 1), hsl(262, 47%, 55%, 1));
+  background-repeat: no-repeat;
+  /* aspect-ratio: 1.91 / 1; */
+  gap: 1em;
+}
+
+.page1 .wrapper::before {
+  content: "</>";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(135deg);
+  opacity: 0.4;
+}
+
+.page1 .wrapper::after {
+  content: "</>";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+
+.page1 .wrapper .contact-cont {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.page1 .wrapper .contact-cont .h2 {
+  padding-block: 1em;
+}
+
+.page1 .wrapper .contact-cont .list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  list-style: none;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  padding: 1em;
+  border-radius: 1em;
+  filter: var(--add-shadow);
+}
+
+.page1 .wrapper .contact-cont .list .item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+
+.page1 .wrapper .currentPage-cont {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.page1 .wrapper .pages-cont {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: hsla(0, 0%, 0%, 0.4);
+  padding: 1em;
+  filter: var(--add-shadow);
+  border-radius: 2em;
+}
+
+.page1 .wrapper .pages-cont .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.page1 .wrapper .pages-cont .list .item {
+}

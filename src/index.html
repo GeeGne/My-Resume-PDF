@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Resume</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/page 1.css">
+    <link rel="stylesheet" href="styles/page 2.css">
+    <link rel="stylesheet" href="styles/page 3.css">
+    <link rel="stylesheet" href="styles/page 4.css">
+    <link rel="stylesheet" href="styles/page 5.css">
+    <link rel="stylesheet" href="styles/page 6.css">
+    <link rel="stylesheet" href="styles/page 7.css">
+
+    <style>
+
+      @page {
+        size: 297mm 210mm landscape;
+        margin: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --light-background-color: hsl(0, 0%, 85%); 
+        --font-p-color: hsl(0, 0%, 15%);
+        --font-p-invert-color: hsl(0, 0%, 85%);
+        --font-h-color: hsl(0, 0%, 0%);
+        --font-h-invert-color: hsl(0, 0%, 100%);
+        /* --font-size-xSmall: 0.9em; */
+        /* --font-size-small: 1.4em; */
+        /* --font-size-medium: 1.6em; */
+        /* --font-size-large: 1.8em; */
+
+        --font-size-xSmall: 0.9em;
+        --font-size-small: 1em;
+        --font-size-medium: 1.2em;
+        --font-size-large: 1.4em;
+
+        --primary-color: #FFFF00;
+        --add-shadow: drop-shadow(0px 0px 8px hsla(0, 0%, 0%, 0.7));
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 100%;
+      }
+
+      body {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 1rem;
+        /* overflow-x: hidden; */
+        /* overflow: hidden; */
+      }
+
+      h1 {
+        font-size: var(--font-size-large);
+        color: var(--font-h-invert-color);
+      } 
+           
+      h2 {
+        font-size: var(--font-size-medium);
+        color: var(--font-h-invert-color);
+      } 
+           
+      h3 {
+        font-size: var(--font-size-small);
+        color: var(--font-h-invert-color);
+      } 
+           
+      p {
+        font-size: var(--font-size-Small);
+        color: var(--font-p-invert-color);
+      }
+
+      a {
+        font-size: var(--font-size-Small);
+        /* color: var(--font-p-invert-color); */
+        color: hsl(262, 47%, 65%, 1);
+      } 
+
+      strong {
+        color: var(--font-h-invert-color);
+      }
+
+      .page {
+        display: flex;
+        width: 297mm;
+        height: 210mm;
+        page-break-after: always;
+        overflow: hidden;
+      }
+
+      .wrapper {
+        /* overflow: hidden; */
+        width: 100vw;
+        height: 100vh
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="page1 page">
+      <div class="wrapper">
+
+        <div class="contact-cont">
+          <ul class="list">
+            <li class="item">
+              <h2 class="h2">Contact Me</h2>
+            </li>
+            <li class="item">
+              <h3 class="h3">Egypt | Al Abour</h3>
+            </li>
+            <li class="item">
+              <h3 class="h3">Phone</h3>
+              <p class="p">+201150407151</p>
+            </li>
+            <li class="item">
+              <h3 class="h3">Email</h3>
+              <p class="p">bluewhalexweb@outlook.com</p>
+            </li>
+            <li class="item">
+              <h3 class="h3">LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/ahmed-alghabra-295a82316/" class="p">https://www.linkedin.com/in/ahmed-alghabra-295a82316/</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="currentPage-cont">
+          <h3>1 / 7</h3>
+        </div>  
+  
+        <div class="pages-cont">
+          <h2>Quick Access</h2>
+          <ul class="list">
+            <li class="item">
+              <h3 class="h3">About Me</h3>
+              <p class="p">2 / 7</p>
+            </li>
+            <li class="item">
+              <h3 class="h3">Previous Work</h3>
+              <p class="p">3 / 7 - 6 / 7</p>
+            <li class="item">
+              <h3 class="h3">Services</h3>
+              <p class="p">7 / 7</p>
+            </li>
+          </ul>
+        </div>  
+  
+        <h1 style="color: var(--primary-color)">Welcome to My Portfolio</h1>
+        <h2>Ahmed Alghabra</h2>
+        <h3>Frontend Web Developer</h3>
+      </div>  
+    </div>
+
+    <div class="page2 page">
+      <div class="wrapper">
+        <div class="currentPage-cont">
+          <h3>2 / 7</h3>
+        </div>  
+        <div class="description-cont">
+          <section class="aboutMe-sec">
+            <div class="pfp-cont">
+              <img class="pfp" src="/assets/IMG_20230506_100601.jpg"/>
+            </div>    
+            <div class="skills-cont">
+              <h1 class="h2">Skills</h1>
+              <span class="skill">HTML5</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">React</span>
+              <span class="skill">Git</span>
+              <span class="skill">SASS</span>
+              <span class="skill">Firebase</span>
+              <span class="skill">Zustand</span>
+            </div>    
+          </section>
+          <section class="summary-sec">
+            <div class="aboutMe-cont">
+              <h2 class="h2">About me:</h2>
+              <p class="p"> 
+                Enthusiastic and self-motivated junior Frontend developer with a strong foundation in modern web 
+                technologies. <strong>Skilled in creating responsive and user-friendly web applications</strong> using <strong>React, HTML, CSS,</strong> 
+                and <strong>JavaScript</strong>. Proficient in using <strong>Git</strong> for version control and <strong>SASS</strong> for advanced CSS styling. Eager to 
+                contribute creative solutions and grow in a professional development environment. Strong 
+                understanding of web development principles and a keen eye for design.
+              </p>
+            </div>
+          </section>
+          <section class="experience-sec">
+            <div class="previousWork-cont">
+              <h1 class="h2">Prevoius work</h1>
+              <h3 class="h3">ONEBIKE's Website</h3>
+              <p class="p">Made full e-commerce Website for Onebike's team</p>
+              <h3 class="h3">Link</h3>
+              <a href="https://onebike-b622f.web.app" class="a">https://onebike-b622f.web.app</a>
+              <div class="home-img-cont">
+                <img class="frame-img" src="/assets/desktop_frame.png"/>
+                <img class="img" src="/assets/onebike-home-page.png"/>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>  
+    </div>
+
+    <div class="page3 page">
+      <div class="wrapper">
+        <div class="description-cont">
+          <div class="currentPage-cont">
+            <h3>3 / 7</h3>
+          </div>  
+          <section class="title-sec">
+            <h2 class="h2">cross-browser compatibility and responsive design</h2>
+          </section>
+          <section class="hightLight-sec">
+            <div class="desktop-cont">
+              <div class=desktop-frame>
+                <img class="frame-img" src="/assets/desktop_frame.png">
+                <!-- <img class="frame-img" src="/assets/web_frame.png"> -->
+                <img class="img" src="/assets/desktop-view.png">
+              </div>
+              <div class="stretchLine"></div>
+              <h2 class="h2">Desktop View</h2>
+            </div>
+            <div class="smartphone-cont">
+              <h2 class="h2">Smartphone View</h2>
+              <div class="stretchLine"></div>
+              <div class="iphone-frame">
+                <img class="img" src="/assets/smartphoneDM-view.png">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>  
+    </div>
+    
+    <div class="page4 page">
+      <div class="wrapper">
+        <div class="description-cont">
+          <div class="currentPage-cont">
+            <h3>4 / 7</h3>
+          </div>  
+          <section class="title-sec">
+            <h2 class="h2">Authentication</h2>
+          </section>
+          <section class="hightLight-sec">
+            <div class="authText-cont">
+              <h3 class="h3">User Authentication & Authorization:</h3>
+              <p class="p"><span style="color: var(--font-h-invert-color)">Implemented secure user authentication using modern practices, including email verification, password encryption, and role-based access control.</span> This ensures a safe shopping environment where users can securely register, log in, and manage their accounts.</p>
+            </div>
+            <div class="authImg-cont">
+              <div class="imgHolder-cont">
+                <img class="frame-img" src="/assets/android_frame.png">
+                <img class="img" src="/assets/authenticationData.png">
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>  
+    </div>
+
+    <div class="page5 page">
+      <div class="wrapper">
+        <div class="description-cont">
+          <div class="currentPage-cont">
+            <h3>5 / 7</h3>
+          </div>  
+          <section class="title-sec">
+            <h1 class="h1">Order Management</h1>
+          </section>
+          <section class="hightLight-sec">
+            <div class="ordersImg-cont">
+              <div class="imgHolder-cont">
+                <img class="frame-img" src="/assets/android_frame.png">
+                <img class="img" src="/assets/OrderData.png">
+              </div>
+            </div>
+            <div class="ordersText-cont">
+              <h2 class="h2">Order Management & Data Handling:</h2>
+              <p class="p"><span style="color: var(--font-h-invert-color)">Designed and integrated a comprehensive order management system, allowing users to browse products, add items to their cart, and complete purchases.</span> The system tracks order data, including user details, product specifications, order status, and transaction history. This data is securely stored and accessible for both customers and administrators, facilitating smooth order processing, tracking, and customer service.</p>
+            </div>
+          </section>
+        </div>
+      </div>  
+    </div>
+
+    <div class="page6 page">
+      <div class="wrapper">
+        <div class="currentPage-cont">
+          <h3>6 / 7</h3>
+        </div>
+        <div class="description-cont">
+          <section class="title-sec">
+            <h1 class="h1">Theme Mode</h1>
+          </section>
+          <div class="shadow-cont"></div>
+          <div class="frame-img-cont">
+            <img class="img" src="/assets/android_frame.png">
+          </div>
+          <div class="lightTheme-cont">
+            <img class="img" src="/assets/light_theme.png">
+          </div>
+          <div class="darkTheme-cont">
+            <img class="img" src="/assets/dark_theme.png">
+          </div>
+          <div class="hybirdTheme-cont">
+            <img class="img" src="/assets/hybird_theme.png">
+          </div>
+          <div class="white-circle"></div>
+          <div class="black-circle"></div>
+          <div class="icons-cont">
+            <img class="sun" src="/assets/sun_half.svg">
+            <img class="moon" src="/assets/moon_stars.svg">
+          </div>
+          <div class="text-cont">
+            <h3 class="h3">
+              Theme Customization:
+            </h3>
+            <p class="p">
+              Integrated theme support with light and dark modes, providing users with the flexibility to choose their preferred viewing experience. This not only improves accessibility for users with visual preferences but also enhances the aesthetic appeal of the website.
+            </p>
+          </div>
+        </div>  
+      </div>  
+    </div>
+
+    <div class="page7 page">
+      <div class="wrapper">
+        <div class="currentPage-cont">
+          <h3>7 / 7</h3>
+        </div>
+        <div class="description-cont">
+          <section class="title-sec">
+            <h1 class="h1">My Services</h1>
+          </section>
+          <section class="services-sec">
+            <!-- <h2 class="h2">something</h2> -->
+            <ul class="list">
+              <li class="item">
+                <h3 class="h3">Custom Website Development</h3>
+                <p class="p">Create bespoke websites tailored to the unique needs of each client.</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">E-commerce Website Development</h3>
+                <p class="p">Develop fully functional e-commerce websites with features like product listings, shopping carts, payment gateways, and order management systems.</p>
+                <p class="p">Implement secure user authentication and data handling to protect customer information.</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">SEO and Performance Optimization</h3>
+                <p class="p">Implement SEO best practices to improve search engine rankings and drive organic traffic to client websites.</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">Maintenance and Support</h3>
+                <p class="p">Ability to fix bugs, update existed websites and improve overall look, performance and usability all for a better User experience.</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">Single Page Application (SPA) Development</h3>
+                <p class="p"></p>
+              </li>
+              <li class="item">
+                <h3 class="h3">Cross-Browser Compatibility</h3>
+                <p class="p">Ensure websites are fully functional across all major browsers (Chrome, Firefox, Safari, Edge) and older versions where necessary.</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">Email Template and Portfolio Development</h3>
+                <p class="p">Design and develop responsive email templates for marketing campaigns, newsletters.</p>
+                <p class="p">Design, develop, and host custom portfolios to enhance your personal marketing.</p>
+              </li>
+            </ul>
+          </section>
+          <!-- <section class="contact-sec">
+            <ul class="list">
+              <li class="item">
+                <h2 class="h2">Contact Me</h2>
+              </li>
+              <li class="item">
+                <h3 class="h3">Phone</h3>
+                <p class="p">+201150407151</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">Email</h3>
+                <p class="p">bluewhalexweb@outlook.com</p>
+              </li>
+              <li class="item">
+                <h3 class="h3">LinkedIn</h3>
+                <p class="p">https://www.linkedin.com/in/ahmed-alghabra-295a82316/</p>
+              </li>
+            </ul>
+          </section> -->
+        </div>
+      </div>  
+    </div>
+  </body>
+</html>

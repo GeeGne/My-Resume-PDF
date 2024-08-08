@@ -1,0 +1,237 @@
+.page3 .wrapper {
+  position: relative;
+  display: flex;
+  background: linear-gradient(135deg, hsl(212, 72%, 59%, 0.8), hsl(262, 47%, 55%, 0.8));
+  background-color: hsla(0, 0%, 0%);
+  background-repeat: no-repeat;
+  /* aspect-ratio: 1.91 / 1; */
+}
+
+.page3 .wrapper::before {
+  content: "</>";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(135deg);
+  opacity: 0.4;
+}
+
+.page3 .wrapper::after {
+  content: "</>";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+
+.page3 .wrapper .currentPage-cont {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.page3 .wrapper .description-cont {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1em;
+  padding-block: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+.page3 .wrapper .description-cont .title-sec, 
+.page3 .wrapper .description-cont .hightLight-sec {
+}
+
+.page3 .wrapper .description-cont .title-sec {
+  display: flex;
+}
+
+.page3 .wrapper .description-cont .title-sec .h2 {
+  color: var(--primary-color);
+  margin-inline: auto;
+}
+
+.page3 .wrapper .description-cont .title-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec {
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont {
+  flex: 1;        
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .stretchLine {
+  position: relative;
+  width: 90%;
+  height: 4px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .stretchLine::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.2em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/left_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .stretchLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.7em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/right_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .desktop-frame {
+  position: relative;
+  width: 95%;
+  filter: drop-shadow(0px 0px 8px hsla(0, 0%, 0%, 0.7));
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .desktop-frame .frame-img {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 101%;
+  height: 108%;
+  object-fit: fill;
+  z-index: -1;
+  /* border-radius: 1em; */
+  filter: invert(100%);
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .desktop-frame .img {
+  width: 100%;
+  /* opacity: 0; */
+}
+
+
+.page3 .wrapper .description-cont .hightLight-sec .desktop-cont .h3 {
+  
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .stretchLine {
+  position: relative;
+  width: 40%;
+  height: 4px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .stretchLine::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.2em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/left_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .stretchLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.7em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/right_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .iphone-frame {
+  position: relative;
+  height: 70%;
+  filter: drop-shadow(0px 0px 8px hsla(0, 0%, 0%, 0.7));
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .iphone-frame::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background-image: url(/assets/android_frame.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* filter: (205deg); */
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .iphone-frame .img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 2em;
+}
+
+.page3 .wrapper .description-cont .hightLight-sec .smartphone-cont .h3 {
+
+}
+
+.page3 .wrapper .description-cont .hightLight-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}

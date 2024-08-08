@@ -1,0 +1,204 @@
+.page4 .wrapper {
+  position: relative;
+  display: flex;
+  background: linear-gradient(135deg, hsl(212, 72%, 59%, 0.8), hsl(262, 47%, 55%, 0.8));
+  background-color: hsla(0, 0%, 0%);
+  background-repeat: no-repeat;
+  /* aspect-ratio: 1.91 / 1; */
+}
+
+.page4 .wrapper::before {
+  content: "</>";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(135deg);
+  opacity: 0.4;
+}
+
+.page4 .wrapper::after {
+  content: "</>";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  font-weight: bold;
+  color: white;
+  font-size: 12rem;
+  transform: rotate(45deg);
+  opacity: 0.4;
+}
+
+.page4 .wrapper .currentPage-cont {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.page4 .wrapper .description-cont {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1em;
+  padding-block: 2em;
+  width: 100%;
+  height: 100%;
+  gap: 1em;
+}
+
+.page4 .wrapper .description-cont .title-sec, 
+.page4 .wrapper .description-cont .hightLight-sec {
+}
+
+.page4 .wrapper .description-cont .title-sec {
+  display: flex;
+}
+
+.page4 .wrapper .description-cont .title-sec .h2 {
+  color: var(--primary-color);
+  margin-inline: auto;
+}
+
+
+.page4 .wrapper .description-cont .title-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec {
+  display: flex;
+  gap: 1em;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont {
+  flex: 1;        
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .stretchLine {
+  position: relative;
+  width: 90%;
+  height: 4px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .stretchLine::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -0.2em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/left_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .stretchLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -0.7em;
+  transform: translateY(-50%);
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/right_arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .img {
+  height: 80%;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .h3 {
+  position: relative;
+  font-weight: 600;
+  color: var(--font-h-invert-color);        
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2.3em;
+  width: 2em;
+  height: 2em;
+  background-image: url(/assets/person-circle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authText-cont .p {
+  font-size: var(--font-size-extraSmall);
+  color: var(--font-p-invert-color);
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authImg-cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  filter: var(--add-shadow);
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authImg-cont .stretchLine {
+  /* position: relative; */
+  width: 37%;
+  height: 4px;
+  background-color: white;
+  opacity: 0.7;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authImg-cont .imgHolder-cont {
+  position: relative;
+  height: 85%;
+  /* background-color: red; */
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authImg-cont .imgHolder-cont .frame-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 234%;
+  height: 110%;
+  object-fit: fill;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec .authImg-cont .imgHolder-cont .img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 1em;
+}
+
+.page4 .wrapper .description-cont .hightLight-sec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}
